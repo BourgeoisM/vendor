@@ -32,45 +32,45 @@ AddonLocales["frFR"] =
 ["MERCHANT_MORE_SCRAP"] = "Il y a plus d'objet dans votre inventaire qui pourraient être recyclés après le recyclage en cours, fermez et réouvrez le recycleur pour continuer",
 
 
-
---TODO : reste à faire
 -- Tooltip
-["TOOLTIP_ADDITEM_ERROR_NOITEM"] = "Failed to add item to %s-sell list. The game tooltip is not over an item.",
-["TOOLTIP_ITEM_IN_ALWAYS_SELL_LIST"] = "Vendor: Always Sell",
-["TOOLTIP_ITEM_IN_NEVER_SELL_LIST"] = "Vendor: Never Sell",
-["TOOLTIP_ITEM_WILL_BE_SOLD"] = "Will be sold by Vendor",
-["TOOLTIP_RULEMATCH_SELL"] = "Sell: %s",
-["TOOLTIP_RULEMATCH_KEEP"] = "Keep: %s",
+["TOOLTIP_ADDITEM_ERROR_NOITEM"] = "Echec d'ajout d'objet à la liste %s-vente. L'info-bule n'est ne designe pas un objet",--TODO: verify ingame behavior to tweak translation
+["TOOLTIP_ITEM_IN_ALWAYS_SELL_LIST"] = "Vendor: Toujours vendre",
+["TOOLTIP_ITEM_IN_NEVER_SELL_LIST"] = "Vendor: Jamais vendre",
+["TOOLTIP_ITEM_WILL_BE_SOLD"] = "Sera vendu par Vendor",
+["TOOLTIP_RULEMATCH_SELL"] = "Vendre: %s",
+["TOOLTIP_RULEMATCH_KEEP"] = "Garder: %s",
 
 -- Options
-["OPTIONS_TITLE_ADDON"] = "These settings are for configuring Vendor behavior.\n\n",
-["OPTIONS_SHOW_BINDINGS"] = "Key Bindings",
-["OPTIONS_OPEN_RULES"] = "Open Rules",
+["OPTIONS_TITLE_ADDON"] = "Ces paramètres sont la configuration du comportement de Vendor.\n\n",
+["OPTIONS_SHOW_BINDINGS"] = "Configuration des raccourcis",
+["OPTIONS_OPEN_RULES"] = "Ouvrir la configuration des Règles",
 
 
-["OPTIONS_HEADER_REPAIR"] = "Repair",
-["OPTIONS_DESC_REPAIR"] = "Whether to auto-repair, and how to pay for it.\n",
-["OPTIONS_SETTINGNAME_AUTOREPAIR"] = "Auto-Repair",
-["OPTIONS_SETTINGDESC_AUTOREPAIR"] = "Automatically repair when visiting a repair-capable vendor.",
-["OPTIONS_SETTINGNAME_GUILDREPAIR"] = "Use Guild Bank",
-["OPTIONS_SETTINGDESC_GUILDREPAIR"] = "Uses guild bank for repairs if possible.",
+["OPTIONS_HEADER_REPAIR"] = "Réparer",
+["OPTIONS_DESC_REPAIR"] = "Choisir s'il faut réparer, et comment payer les réparations.\n",
+["OPTIONS_SETTINGNAME_AUTOREPAIR"] = "Réparation automatique",
+["OPTIONS_SETTINGDESC_AUTOREPAIR"] = "Réparation automatique lors de la visite d'un marchant capable de réparer",
+["OPTIONS_SETTINGNAME_GUILDREPAIR"] = "Utiliser la banque de guilde",
+["OPTIONS_SETTINGDESC_GUILDREPAIR"] = "Utilise si possible la banque de guilde pour réparer",
+
 
 -- Main Config Panel (aka Selling)
-["OPTIONS_HEADER_SELLING"] = "General",
-["OPTIONS_DESC_SELLING"] = "What to sell at a vendor automatically. Keep rules are always processed first, then Sell rules run on items that remain. By default we have several safeguard Keep rules enabled so you don't accidentally sell something you want. Before disabling any Keep rules, you should definitely take a look at the sell rules that are enabled first.\n",
-["OPTIONS_SETTINGNAME_AUTOSELL"] = "Auto-Sell",
-["OPTIONS_SETTINGDESC_AUTOSELL"] = "Automatically sell items when interacting with a merchant. If this is disabled you can still manually sell by setting a hotkey.",
-["OPTIONS_SETTINGNAME_BUYBACK"] = "Limit number sold to 12",
-["OPTIONS_SETTINGDESC_BUYBACK"] = "Limits the number of items sold each time an autosell is triggered to 12, which is the buyback limit. This allows you to always buy back any items that were sold.",
-["OPTIONS_SETTINGNAME_CONFIG"] = "Open Rule Config",
-["OPTIONS_SETTINGDESC_CONFIG"] = "Shows the Rule Configuration Dialog, allowing you to toggle rules and create your own rules.",
-["OPTIONS_SETTINGNAME_TOOLTIP"] = "Enable ToolTip",
-["OPTIONS_SETTINGDESC_TOOLTIP"] = "Vendor will add a line to the tooltip indicating when the item will be sold. ",
-["OPTIONS_SETTINGNAME_EXTRARULEINFO"] = "Extra rule information",
-["OPTIONS_SETTINGDESC_EXTRARULEINFO"] = "Include information about the rule that causes the item to be sold or kept. An item may match multiple rules; this will only display the first one that matches.",
-["OPTIONS_SETTINGNAME_MAXITEMS"] = "Limit number of items to sell",
-["OPTIONS_SETTINGDESC_MAXITEMS"] = "Controls the maximum number items vendor will auto-sell at each visit. If you want to be able to buy-back all items sold, set this to 12.",
+["OPTIONS_HEADER_SELLING"] = "Général",
+["OPTIONS_DESC_SELLING"] = "Que vendre automatiquement au vendeur. Les règles de conservations en premier, ensuite les règles de ventes sont appliquées sur les objets qu'il reste. Par défault il y à de nombreuses règles de conservation activées pour que vous ne vendiez pas quelque chose accidentellement. Avant de désactiver ces règles, vous devriez regarder les règles de ventes qui sont activées.\n",
+["OPTIONS_SETTINGNAME_AUTOSELL"] = "Vendre Automatiquement",
+["OPTIONS_SETTINGDESC_AUTOSELL"] = "Vendre automatiquement les objet lors de l'intéraction avec un marchant. Si ce paramètre est désactivé, vous pouvez toujours vendre à l'aide d'un raccourci.",
+["OPTIONS_SETTINGNAME_BUYBACK"] = "Limiter le nombre d'objet vendus à 12",
+["OPTIONS_SETTINGDESC_BUYBACK"] = "Limiter le nombre d'objet vendus à chaque fois que la vente automatique est lancée à 12, Ce qui est la limite du rachat. Cela vous permet de pouvoir racheter tout les objets vendus automatiquement.",
+["OPTIONS_SETTINGNAME_CONFIG"] = "Ouvrir la configuration des Règles",
+["OPTIONS_SETTINGDESC_CONFIG"] = "Affiche la boîte de dialog de configuration des Règles, Cela vous permet d'activer/désactiver les Règles et créer vos propres règles.",
+["OPTIONS_SETTINGNAME_TOOLTIP"] = "Activer l'info-bulle",
+["OPTIONS_SETTINGDESC_TOOLTIP"] = "Vendor va ajouter une ligne dans l'info-bulle pour indiquer que l'objet sera vendu.",
+["OPTIONS_SETTINGNAME_EXTRARULEINFO"] = "Information de règle supplémentaire",
+["OPTIONS_SETTINGDESC_EXTRARULEINFO"] = "Inclure des information sur la règle qui décide si l'objet sera vendu ou pas. Un objet peut avoir de multiples règles; Cela va afficher uniquement le premier objet concerné.",
+["OPTIONS_SETTINGNAME_MAXITEMS"] = "Limiter le nombre d'objet à vendre",
+["OPTIONS_SETTINGDESC_MAXITEMS"] = "Contrôle le nombre maximum d'objet que Vendor va vendre automatiquement à chaque fois. Si vous voulez pouvoir rachetter tout les objets vendus, mettez la limite a 12.",
 
+--TODO : reste à faire
 -- Performance Settings tab
 ["OPTIONS_CATEGORY_PERFORMANCE"] = "Performance",
 ["OPTIONS_TITLE_PERFORMANCE"] = "Vendor makes use of throttling and coroutines to avoid unresponsiveness in the interface and client disconnects. These settings control that behavior.\n\n",
